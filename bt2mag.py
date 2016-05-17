@@ -1,4 +1,4 @@
-import BeautifulSoup
+from bs4 import BeautifulSoup
 import time
 import socket
 import sys

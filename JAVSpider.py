@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import socket
-import urllib2
 import bt2mag
 import time
 
@@ -10,11 +9,11 @@ errorNumberList = []
 magnetList = []
 driver = webdriver.Firefox()
 socket.setdefaulttimeout(200)
-time.sleep(30)
-fo = open('mingrihuaqiluo.txt','wb+')
-for index in range(1,11):
+time.sleep(20)
+fo = open('linyounai.txt','wb+')
+for index in range(1,2):
     strCurrentPage = "/currentPage/" + str(index)
-    strUrl = "https://www.avmoo.com/cn/star/1ny" + strCurrentPage
+    strUrl = "https://avmo.pw/cn/star/89n" + strCurrentPage
     print strUrl
     # response = urllib2.urlopen(strUrl)
     # html = response.read()
